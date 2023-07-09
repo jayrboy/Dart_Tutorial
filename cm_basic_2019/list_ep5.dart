@@ -42,4 +42,14 @@ void main() {
     true
   ];
   print(list4);
+
+  List<String> nums = [];
+  List.generate(5, (index) {
+    nums.add('item ${index + 1}');
+  });
+  print(nums);
+  // เทียบเท่า
+  for (int i = 0; i < 5; i++) {
+    nums.add('item ${i + 1}');
+  }
 }

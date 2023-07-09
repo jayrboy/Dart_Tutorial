@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  // เงื่อนไขแบบ Ternary
+  // Ternary
   int a = 1, b = -10;
   int max = (a > b) ? a : b;
   if (a > b) {
@@ -12,8 +12,9 @@ void main() {
   int total = 555;
   int carriage = (total >= 1000) ? 0 : 50;
 
-  // เงื่อนไขแบบำ switch case (int, String)
-  print('Enter your phone:');
+  // switch case (int, String)
+  stdout
+      .write('Enter your phone[Samsung, Oppo, Pixel, iPhone, iPad, Surface]:');
   String? moblie = stdin.readLineSync();
   String m = '...';
   switch (moblie) {
@@ -31,5 +32,12 @@ void main() {
       break;
     default:
       print('Unknown');
+  }
+
+  // if-else
+  if (m == 'Samsung' || m == 'Oppo' || m == 'Pixel') {
+    print('Android');
+  } else if (m == 'iPhone' || m == 'iPad') {
+    print('IOS');
   }
 }
