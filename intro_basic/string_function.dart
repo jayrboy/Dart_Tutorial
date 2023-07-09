@@ -1,6 +1,18 @@
 import 'dart:io';
 
 void main() {
+  String str = 'abcdefg';
+  print(str.length); //  7
+  print(str.indexOf('d')); // 3
+  print(str.indexOf('D')); // -1 (ตัวพิมพ์ไม่ตรงกัน)
+  print(str.substring(2)); // cdefg
+  print(str.substring(2, 5)); // cde
+  print(str.toUpperCase()); // ABCDEFG
+
+  String url = 'http://dart.dev';
+  print(url.startsWith('http://'));
+  print(url.endsWith('.com'));
+
   String schoolName = 'Suankularb School';
   String at = "Nonthaburi 11120";
 
@@ -18,7 +30,7 @@ void main() {
   I am also writing here.
   """;
 
-  // Convert String to int and double
+  // Convert String to (int, double)
   String str1 = "1";
   int intvalue = int.parse(str1);
 
@@ -38,11 +50,11 @@ void main() {
   print("Using interpolation, full name is $fName $lName");
 
   // String Properties
-  String str = "Hello World!";
-  print(str.codeUnits);
-  print("คืนค่า true ถ้า String นี้ว่าง: ${str.isEmpty}");
-  print("คืนค่า false ถ้า String นี้ว่าง: ${str.isNotEmpty}");
-  print("The length of the string is: ${str.length}");
+  String str0 = "Hello World!";
+  print(str0.codeUnits);
+  print("คืนค่า true ถ้า String นี้ว่าง: ${str0.isEmpty}");
+  print("คืนค่า false ถ้า String นี้ว่าง: ${str0.isNotEmpty}");
+  print("The length of the string is: ${str0.length}");
 
   // Methods of String
   String address = "BangKok";
@@ -77,6 +89,7 @@ void main() {
   String newText = text.replaceAll("milk", "water");
   print("Original Text: $text");
   print("Replaced Text: $newText");
+  print(text.replaceFirst('I am', 'You are'));
 
   // Split String
   String allNames = "Film, Jay, Stop, Sup";
@@ -86,6 +99,9 @@ void main() {
   print(listNames[1]);
   print(listNames[2]);
   print(listNames[3]);
+
+  String dt = '31/12/2023';
+  print(dt.split('/')); // [31, 12, 2023]
 
   // toString
   int number = 20;
