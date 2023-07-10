@@ -1,11 +1,24 @@
 import 'dart:math';
 
 class CircleV3 {
-  num radius;
+  static num pi = 3.14;
+  num radius = 1;
 
   CircleV3({required this.radius});
 
   num diameter() => 2 * radius;
+
+  static num getArea() {
+    return pi * radius * radius; // Error 1
+  }
+
+  num getDiameter() {
+    return 2 * radius;
+  }
+
+  static num getPerimeter() {
+    return pi * getDiameter(); // Error 2
+  }
 }
 
 class Sphere extends CircleV3 {

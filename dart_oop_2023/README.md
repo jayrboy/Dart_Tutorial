@@ -3,7 +3,7 @@
 - มีพฤติกรรมหรือการกระทำต่างๆ (Behavior or Action) ซึ่งเรียกว่า Method ตัวอย่างพฤติกรรมของรถ เช่น การเร่งเครื่อง การหยุด การถอย การเลี้ยวซ้ายและขวา
 - Class คือ โครงร่างที่ใช้ในการกำหนดองค์ประกอบและวิธีการทำงานของ Object
 
-# การสร้างอินสแปตซ์ (Instantation)
+# การสร้างอินสแตนซ์ (Instantation)
 - var person = Person();
 - final thDate = ThaiDate();
 
@@ -36,4 +36,8 @@
 - with ... class to mixin
 
 # keyword static
-- use for property, method in class only
+- static use for property, method static in class only
+- Instance Member
+
+# Class Generic
+- class Data<T> {..}
