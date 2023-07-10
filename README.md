@@ -11,3 +11,6 @@
 
 # Youtube
 - https://www.youtube.com/@darttutorial/videos
+
+# OOP
+- https://dart-tutorial.com/object-oriented-programming/questions-for-practice-6/

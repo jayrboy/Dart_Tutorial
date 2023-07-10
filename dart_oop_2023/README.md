@@ -27,6 +27,14 @@
 - constructor ไม่สามารถสืบทอดได้ เนื่องจากการตั้งชื่อ constructor เหมือนกับชื่อ class
 - อ้างอิง constructor ของ superclass โดยตรง สิ่งที่ต้องเพิ่มเติมคือส่งค่า parameter ให้แก่ constructor ของ superclas ของมันด้วยคีย์เวิร์ด super
 
+# Constant constructor
+- used to create a object whose value cannot be changed. It Improves the performance of the program. // const
+
+# Encapsulation
+
+# Named constructor
+- constructor.namedConstructor(); // Mobile.dart , Person.dart
+
 # override
 - override property
 - override method
@@ -36,8 +44,11 @@
 - with ... class to mixin
 
 # keyword static
-- static use for property, method static in class only
+- static use for property, method static in class only  // CircleV3.dart
 - Instance Member
 
 # Class Generic
-- class Data<T> {..}
+- Generic.dart
+
+# Getters , Setters
+- Camera.dart

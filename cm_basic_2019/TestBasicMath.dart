@@ -1,6 +1,6 @@
-import './mixin_math.dart';
+import '../dart_oop_2023/mixin/BasicMath.dart';
 
-class Calculator with BasicMath{}
+class Calculator with BasicMath {}
 
 void main() {
   Calculator myCal = Calculator();
