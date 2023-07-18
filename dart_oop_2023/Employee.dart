@@ -4,6 +4,13 @@ class Employee {
   late String name;
   double salary = 0;
   String? email;
+
+  void getAll() {
+    print('ID: $id');
+    print('Name: $name');
+    print('Salary: $salary');
+    print('Email: $email');
+  }
 }
 
 void main() {
@@ -23,5 +30,7 @@ void main() {
   var emp1 = Employee() // ห้ามมี ; ที่นี่
     ..id = 123
     ..name = "JR"
-    ..salary = 30000; // ใส่ ; ที่อันสุดท้าย
+    ..salary = 30000
+    ..email = 'jayr.jakkrit@gmail.com'; // ใส่ ; ที่อันสุดท้าย
+  emp1.getAll();
 }

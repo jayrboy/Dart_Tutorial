@@ -1,10 +1,3 @@
-void main() {
-  var cal = Calculator();
-  double a = cal.add(5, 15);
-  print(cal.subtract(100, 10.25));
-  double circleArea = cal.circleArea(10);
-}
-
 class Calculator {
   double pi = 3.14;
 
@@ -21,4 +14,11 @@ class Calculator {
     return pi * square(redius);
     // return this.pi * this.square(redius);
   }
+}
+
+void main() {
+  var cal = Calculator();
+  double a = cal.add(5, 15);
+  print(cal.subtract(100, 10.25));
+  double circleArea = cal.circleArea(10);
 }
