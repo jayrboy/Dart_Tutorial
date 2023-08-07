@@ -14,3 +14,35 @@
 
 # OOP
 - https://dart-tutorial.com/object-oriented-programming/questions-for-practice-6/
+
+# Print and Stdout.write
+
+# Variable
+
+# Operators
+
+# Dynamic
+
+# Constants
+
+# final
+
+# String
+
+# Operators and Operants
+
+# Postfixed and Prefixed Operators
+
+# if-else
+
+# Ternary Operators (if-else)
+
+# switch case
+
+# while loop
+
+# for loop
+
+# break , continue
+
+# do while
