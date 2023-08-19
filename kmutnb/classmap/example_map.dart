@@ -2,7 +2,11 @@ import 'dart:io';
 
 void main() {
   Map<String, int> m = stringCount("AaBbbbbbbCcDddd");
-  print(m);
+
+  m.forEach((key, value) {
+    print('$key -> $value');
+  });
+
 }
 
 Map<String, int> stringCount(String s) {

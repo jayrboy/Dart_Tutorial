@@ -17,11 +17,11 @@ void main() {
     'usa': 'United States America',
   };
 
-  // for loop
+  // การเข้าถึง class Map ด้วย for-in
   for (String k in product.keys) {
     print(product[k]); // show key of this key
   }
-
+  // การเข้าถึง class Map ด้วย forEach()
   product.forEach((key, value) {
     print('$key: $value'); // เช่น ipad: 20000
   });
