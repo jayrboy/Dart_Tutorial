@@ -7,29 +7,19 @@ void main() {
 }
 
 List<int> count_base(String dna) {
-  List<int> atgc = [0, 0, 0, 0];
-  List<String> count = ['A', 'T', 'G', 'C'];
+  List<int> count = [0, 0, 0, 0];
+  List<String> atgc = ['A', 'T', 'G', 'C'];
 
-  for (int i = 0; i <= dna.length - 1; i++) {
-    if (dna[i] == count[0]) {
-      atgc[0] += 1;
-    }
-  }
-  for (int i = 0; i < dna.length - 1; i++) {
-    if (dna[i] == count[1]) {
-      atgc[1] += 1;
-    }
-  }
-  for (int i = 0; i < dna.length - 1; i++) {
-    if (dna[i] == count[2]) {
-      atgc[2] += 1;
-    }
-  }
   for (int i = 0; i < dna.length; i++) {
-    if (dna[i] == count[3]) {
-      atgc[3] += 1;
+    if (dna[i] == atgc[0]) {
+      count[0] += 1;
+    } else if (dna[i] == atgc[1]) {
+      count[1] += 1;
+    } else if (dna[i] == atgc[2]) {
+      count[2] += 1;
+    } else if (dna[i] == atgc[3]) {
+      count[3] += 1;
     }
   }
-
-  return atgc;
+  return count;
 }
