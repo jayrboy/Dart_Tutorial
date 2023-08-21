@@ -1,10 +1,10 @@
 import 'dart:math';
 
-class CircleV3 {
-  static num pi = 3.14;
+class CircleV4 {
+  static num pi = 3.14; // ใช้ได้เฉพาะในคลาส static นี้เท่านั้น
   num radius = 1;
 
-  CircleV3({required this.radius});
+  CircleV4({required this.radius});
 
   num diameter() => 2 * radius;
 
@@ -21,7 +21,7 @@ class CircleV3 {
   }
 }
 
-class Sphere extends CircleV3 {
+class Sphere extends CircleV4 {
   num sphereRadius = 1;
 
   // ใช้ : คั่น (ห้ามใช้ ;)
@@ -30,8 +30,10 @@ class Sphere extends CircleV3 {
   num volume() => (4 / 3) * 3.14 * pow(sphereRadius, 3);
 }
 
-void main(List<String> args) {
+void main() {
   var sp = Sphere(sphereRadius: 15);
   print(sp.diameter());
-  print(sp.diameter());
+  print(sp.area());
+  print(sp.volume());
+  print(sp.getDiameter());
 }

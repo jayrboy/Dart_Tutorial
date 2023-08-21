@@ -9,7 +9,9 @@ void main() {
   print('$result1, $result2, $result3, $result4');
 
   // optional named, positional, default value parameter
-  mul1(y: 6, x: 2);     // รู้ว่าส่ง arguments ค่าอะไรไป, ถ้าทำ library ก็จะรู้ช่องโหว่ทันที
+  mul1(
+      y: 6,
+      x: 2); // รู้ว่าส่ง arguments ค่าอะไรไป, ถ้าทำ library ก็จะรู้ช่องโหว่ทันที
   mul2(x: 10);
   mul3(3);
   mul3(3, 4);

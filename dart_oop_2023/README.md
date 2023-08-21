@@ -40,8 +40,8 @@
 - override method
 
 # Mixin
-- use class to mixin
-- with ... class to mixin
+- class use extends
+- mixin use with mixin1, mixin2, mixin3
 
 # keyword static
 - static use for property, method static in class only  // CircleV3.dart

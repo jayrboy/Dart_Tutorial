@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 
 void main() {
   stdout.write("Enter Number: ");
@@ -9,6 +8,7 @@ void main() {
   int n_100 = number ~/ 100;
   int n_10 = (number ~/ 10) % 10;
   int n_1 = number % 10;
+
   int sum = n_100 + n_10 + n_1;
 
   print(sum);

@@ -2,7 +2,8 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  Distance
+  // Distance
+  // ยืนยันด้วย ! จะไม่มีค่า null แต่ถ้าค่าที่ได้มาเป็น null ก็เปิด Error เหมือนเดิม
   stdout.write('Enter your Topic = ');
   String? t = stdin.readLineSync();
   stdout.write('\nEnter x1 = ');
@@ -18,9 +19,7 @@ void main() {
   double circleArea = pi * pow(r, 2);
   // int x1 = 0, y1 = 0; // 5.0
   // int x2 = 3, y2 = 4; // 5.0
-  num distance = sqrt(
-  pow((x2 - x1), 2) + pow((y2 - y1), 2)
-  );
+  num distance = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
   print('Distance = $distance');
   print('Distance = ' + distance.toString());
-  }
+}

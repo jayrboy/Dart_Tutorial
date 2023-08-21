@@ -1,8 +1,8 @@
 class Employee {
   int id = 0;
   // late นำหน้า คือ ไม่จำเป็นต้องระบุค่า default เอาไว้ล่วงหน้า แต่ต้องไปกำหนดในขั้นตอนใดขั้นตอนหนึ่ง
-  late String name;
-  double salary = 0;
+  late String name = '';
+  double salary = 0.0;
   String? email;
 
   void getAll() {
@@ -18,10 +18,10 @@ void main() {
   emp.id = 6503052412188;
   emp.name = 'Jay Jakkrit';
   emp.salary = 25000;
-  emp.email = 'jayr.jakkrit@gmail.com';
+  emp.email = null;
 
   int id = emp.id;
-  print(id);
+  print(emp.name);
   if (emp.salary <= 15000) {
     print('Nothing');
   }

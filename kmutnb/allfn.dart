@@ -35,12 +35,12 @@ void main() {
   print(ha);
   print('');
 
-  List<int> nums = randIntNumsV1(1, 100, 5);
+  List<int> nums = randIntNums(1, 100, 5);
   print(nums);
 
-  List<int> nums1 = randIntNumsV2(1, 100, 5);
-  Map<String, int> stat = minMaxAvg(nums);
-  print(nums);
+  List<int> nums1 = randIntNums(1, 100, 5);
+  Map<String, int> stat = minMaxAvg(nums1);
+  print(nums1);
   print(stat);
 
   func1(); // ใช้ค่า default
@@ -65,21 +65,16 @@ void oodEvenV1(int num) {
   }
 }
 
-void showName(String first, String last, String title) {
-  print('$title : $first $last');
-}
+void showName(String first, String last, String title) => print('$title : $first $last');
 
-void printHello() {
-  print('Hello');
-}
+void printHello() => print('Hello');
 
-void printSawasdee() {
-  print("สวัสดี");
-}
 
-void test(int a, String b, bool c) {
-  print("$a $b $c");
-}
+void printSawasdee() => print("สวัสดี");
+
+
+void test(int a, String b, bool c) => print("$a $b $c");
+
 
 int add(int m, int k) {
   int r = m + k;
@@ -119,19 +114,7 @@ String? digitToWord(int digit) {
 }
 
 // การส่งค่ากลับแบบชุดข้อมูล
-List<int> randIntNumsV1(int min, int max, int count) {
-  var rand = Random();
-  List<int> result = [];
-  int n;
-  for (int i = 0; i < count; i++) {
-    n = min + rand.nextInt(max - min + 1);
-    result += [n];
-  }
-  return result;
-}
-
-// พารามิเตอร์แบบชุดข้อมูล
-List<int> randIntNumsV2(int min, int max, int count) {
+List<int> randIntNums(int min, int max, int count) {
   var rand = Random();
   List<int> result = [];
   int n;
@@ -155,6 +138,6 @@ Map<String, int> minMaxAvg(List<int> data) {
 }
 
 // พารามิเตอร์แบบกำหนดค่า default [...]
-void func1([int a = 10]) {}
+void func1([int a = 10]) => a;
 void func2([int min = 1, int max = 100]) {}
 void func3(String s, bool b, [double d = 1.23, bool b2 = false]) {}

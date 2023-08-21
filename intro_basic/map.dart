@@ -1,3 +1,4 @@
+import 'dart:io'; 
 // key & value (Dictionary)
 void main() {
   // Basic Map
@@ -32,9 +33,11 @@ void main() {
 
   print(products.length); // 3
 
-  Iterable<String> keys = products.keys; // (iphone, oppo, samsung)
+  List<String> key = products.keys.toList(); // (iphone, oppo, samsung)
+  print(key);
 
-  Iterable<int> values = products.values; // (35000, 12000, 25000)
+  List<int> value = products.values.toList(); // (35000, 12000, 25000)
+  print(value);
 
   if (products.containsKey('vivo')) {
     products.remove('vivo');
@@ -44,6 +47,18 @@ void main() {
     'odd': [1, 3, 5, 7, 9],
     'even': [2, 4, 6, 8, 10],
   };
+
+  int sum;
+  List<int> vals = [];
+  oe.forEach((key, value) {
+    stdout.write('sum $key: ');
+    vals = value;
+    sum = 0;
+    vals.forEach((v) {
+      sum += v;
+    });
+    print(sum);
+  });
 
   // Complex Map
   Map<String, dynamic> complexMap = {

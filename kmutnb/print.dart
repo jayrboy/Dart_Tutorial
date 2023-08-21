@@ -15,13 +15,14 @@ void main() {
   stdout.write(56.789);
   stdout.write(true);
 
+  // กำหนดการตั้งชื่อตัวแปร
   int j;
   int distanceFromEarthToMar;
   double dd;
   double latitude;
   bool isValid;
   String title;
-
+  // กำหนดการตั้งชื่อตัวแปร มีค่า default
   int a = 10, b = 20, c = 30;
   int d = 10, e, f = 30;
   double x1 = 10.25, y2 = 11.50, z3 = 12.75;
@@ -44,7 +45,7 @@ void main() {
 
   final double RATE;
   RATE = 1.5;
-
+  // ดูง่ายกว่า
   final int MIN, MAX;
   MIN = 1;
   MAX = 100;

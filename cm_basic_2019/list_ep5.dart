@@ -12,6 +12,8 @@ void main() {
   list1.add(1);
 
   list1.sort(); // Sort Data
+  print(list1);
+
   print('${list1.indexOf(1)}'); // Search index List: int
   print('${list1.contains(1)}'); // Contains: true
   print('${list1.getRange(1, 4)}'); // (2, 3, 4)
@@ -44,11 +46,12 @@ void main() {
   print(list4);
 
   List<String> nums = [];
+  // generate
   List.generate(5, (index) {
     nums.add('item ${index + 1}');
   });
   print(nums);
-  // เทียบเท่า
+  // เทียบเท่า forloop
   for (int i = 0; i < 5; i++) {
     nums.add('item ${i + 1}');
   }

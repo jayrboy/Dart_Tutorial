@@ -60,6 +60,11 @@
 # do while
 
 # Class List / Class Map
+- .map() return -> Iterable to be Generic type
+ - List => toList()
+ - Set => toSet()
+ - String => toString()
+ - join String => join()
 
 # OOP
 
