@@ -8,5 +8,5 @@ void main() {
 
   print('$n! = $fac');
 
-  print(n.toString() + '!= ' + fac.toString());
+  print(n.toString() + '! = ' + fac.toString());
 }
