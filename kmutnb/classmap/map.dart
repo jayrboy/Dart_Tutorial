@@ -1,4 +1,5 @@
-import 'dart:io'; 
+import 'dart:io';
+
 // key & value (Dictionary)
 void main() {
   // Basic Map
@@ -22,9 +23,10 @@ void main() {
   for (String k in product.keys) {
     print(product[k]); // show key of this key
   }
+
   // การเข้าถึง class Map ด้วย forEach()
   product.forEach((key, value) {
-    print('$key: $value'); // เช่น ipad: 20000
+    print('$key: $value');
   });
 
   // Example Map

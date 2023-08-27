@@ -16,17 +16,17 @@ void main() {
   print(fomula);
 
   // หาพื้นที่สี่เหลี่ยม
-  print("Height of Square:");
+  stdout.write("Height of Square: ");
   double? height = double.parse(stdin.readLineSync()!);
-  print("Width of Square:");
+  stdout.write("Width of Square: ");
   double? width = double.parse(stdin.readLineSync()!);
   double square = height * width;
   print("The square of $height, $width is $square");
 
   // ป้อน ชื่อ-นามสกุล ไปแสดงผลลัพธ์
-  print("First Name:");
+  stdout.write("First Name: ");
   String? fName = stdin.readLineSync();
-  print("Last Name:");
+  stdout.write("Last Name: ");
   String? lName = stdin.readLineSync();
   String a = "$fName $lName";
   print('full name of a is $a');

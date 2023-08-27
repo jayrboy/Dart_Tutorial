@@ -7,8 +7,8 @@ void main() {
   num sum = num1 + num2 + num3 + num4;
 
   // Round Double Value To 2 Decimal Places
-  double prize = 1130.2232323233233;
-  print(prize.toStringAsFixed(2));
+  double price = 1130.2232323233233;
+  print(price.toStringAsFixed(2));
 
   // Convert int and double to String
   int one = 1;

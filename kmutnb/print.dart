@@ -15,6 +15,20 @@ void main() {
   stdout.write(56.789);
   stdout.write(true);
 
+  // Multi Line Single Quotes
+  String multiLineText = '''
+  This is Multi Line Text
+  with 3 single quote
+  I am also writing here.
+  ''';
+
+  // Multi Line Double Quotes
+  String otherMultiLineText = """
+  This is Multi Line Text
+  with 3 double quote
+  I am also writing here.
+  """;
+
   // กำหนดการตั้งชื่อตัวแปร
   int j;
   int distanceFromEarthToMar;
@@ -41,7 +55,7 @@ void main() {
   const int MAXIMUM = 500;
   final int FIRST_VALUE = 1, LAST_VALUE = 100;
   final LAT = -1.23456, LON = -100.001234;
-  const String APP_NAME ='FlutLab';
+  const String APP_NAME = 'FlutLab';
 
   final double RATE;
   RATE = 1.5;

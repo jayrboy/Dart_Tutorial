@@ -1,4 +1,15 @@
 void main() {
+  var name = 'Jay R'; // auto type String
+  var age = 26; // auto type int
+  print(name.runtimeType);
+  print(age.runtimeType);
+
+  // Check Runtime Type
+  var a = 10;
+  print(a.runtimeType);
+  print(a is int); // a is int = true
+  print(a is! int); // a is int = false
+
   var e;
   print(e);
 
@@ -15,11 +26,13 @@ void main() {
   e1 = "1";
   e1 = -0.50;
 
-  const int n = 10;
   // n = 11; // cost เปลี่ยนแปลงตอนโปรแกรมทำงานไม่ได้
+  const int msPerSecond = 1000;
+  const secondsUntil = 5;
+  const msUntilRetry = secondsUntil * msPerSecond;
 
-  final id = 0;
   // ไม่สามารถแปลี่ยนแปลงค่าได้ แต่สามารถเอาไปใช้ส่วนอื่นได้
+  final id = 0;
 
   int x = 10, y = 20;
   print("ค่า x =" + x.toString());
