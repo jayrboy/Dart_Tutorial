@@ -47,6 +47,9 @@ void main() {
 
   int e = maxIndex(fixedLength);
   print(e);
+
+  List<int> num97 = [10, 3, 4, 14, -8];
+  findIndexList(num97, 2);
 }
 
 // List Function
@@ -85,4 +88,22 @@ int maxIndex(List<int> list) {
     }
   }
   return maxI;
+}
+
+List<int> createRandom(int min, int max) {
+  var rand = Random();
+  List<int> list = List.filled(max, 0);
+  for (int i = 0; i < list.length; i++) {
+    list[i] = min + rand.nextInt(max - min + 1);
+  }
+  return list;
+}
+
+void findIndexList(List<int> list, int value) {
+  for (var i = 0; i < list.length; i++) {
+    if (list[i] == value) {
+      print('${list[i]}');
+      break;
+    }
+  }
 }

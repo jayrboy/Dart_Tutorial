@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   List<String> fruits = ['apple', 'banana', 'coconut', 'durian'];
   fruits.forEach((e) => print(e));
@@ -20,4 +22,25 @@ void main() {
     }
   }
   print('max = $max');
+
+  List<int> x = createRandom(1, 10);
+  print(x);
+
+  x.sort();
+  print(x);
+
+  x.sort(((a, b) => b - a));
+  print(x);
+
+  print(x.isEmpty);
+  print(x.isNotEmpty);
+}
+
+List<int> createRandom(int min, int max) {
+  var rand = Random();
+  List<int> list = List.filled(max, 0);
+  for (int i = 0; i < list.length; i++) {
+    list[i] = min + rand.nextInt(max - min + 1);
+  }
+  return list;
 }
