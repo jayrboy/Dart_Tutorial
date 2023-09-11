@@ -1,7 +1,7 @@
 void main() {
-  print(count_base("AAAATTTGGC"));
-  print(count_base("ATTGGC"));
-  print(count_base("TTTATCCCTGGCAAA"));
+  print(count_base("AAAATTTGGC")); // [4, 3, 2, 1]
+  print(count_base("ATTGGC")); // [1, 2, 2, 1]
+  print(count_base("TTTATCCCTGGCAAA")); // [4, 5, 2, 4]
 }
 
 List<int> count_base(String dna) {

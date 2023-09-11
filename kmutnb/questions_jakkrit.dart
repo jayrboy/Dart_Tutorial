@@ -25,9 +25,9 @@ void main() {
 
   // ป้อน ชื่อ-นามสกุล ไปแสดงผลลัพธ์
   stdout.write("First Name: ");
-  String? fName = stdin.readLineSync();
+  String? fName = stdin.readLineSync()!;
   stdout.write("Last Name: ");
-  String? lName = stdin.readLineSync();
+  String? lName = stdin.readLineSync()!;
   String a = "$fName $lName";
   print('full name of a is $a');
 }

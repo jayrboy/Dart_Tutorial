@@ -18,7 +18,7 @@ void main() {
   print('${list1.contains(1)}'); // Contains: true
   print('${list1.getRange(1, 4)}'); // (2, 3, 4)
   list1.remove(4);
-  list1..clear();
+  list1.clear();
   print('${list1.isEmpty}'); // Empty: true
 
   // List 2 integer
