@@ -23,3 +23,9 @@ void main() {
     print('finally \n');
   }
 }
+
+Future<void> doSth() async {
+  await Future.delayed(Duration(seconds: 1), () {
+    throw Exception('Exception from doSth');
+  });
+}
